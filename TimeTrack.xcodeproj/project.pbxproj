@@ -1,0 +1,531 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		001 /* TimeTrackApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101; };
+		002 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 102; };
+		003 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 103; };
+		004 /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 104; };
+		005 /* Project.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105; };
+		006 /* TimeEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 106; };
+		007 /* CategoryRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107; };
+		008 /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = 108; };
+		009 /* ActivityStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 109; };
+		010 /* ProjectStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110; };
+		011 /* WindowTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111; };
+		012 /* ActivityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112; };
+		013 /* HotkeyService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113; };
+		014 /* SpeechService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114; };
+		015 /* OllamaService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115; };
+		016 /* CategoryEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 116; };
+		017 /* MenuBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117; };
+		018 /* CurrentActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118; };
+		019 /* QuickCategoryPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119; };
+		020 /* VoiceInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 120; };
+		021 /* MiniStatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 121; };
+		022 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 122; };
+		023 /* ProjectsSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123; };
+		024 /* HotkeySettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 124; };
+		025 /* OllamaSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 125; };
+		026 /* DailyReportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 126; };
+		027 /* TimelineChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 127; };
+		028 /* GRDB in Frameworks */ = {isa = PBXBuildFile; productRef = 200; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		100 /* TimeTrack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimeTrack.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		101 /* TimeTrackApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeTrackApp.swift; sourceTree = "<group>"; };
+		102 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		103 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		104 /* Activity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
+		105 /* Project.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Project.swift; sourceTree = "<group>"; };
+		106 /* TimeEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeEntry.swift; sourceTree = "<group>"; };
+		107 /* CategoryRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryRule.swift; sourceTree = "<group>"; };
+		108 /* Database.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Database.swift; sourceTree = "<group>"; };
+		109 /* ActivityStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityStore.swift; sourceTree = "<group>"; };
+		110 /* ProjectStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectStore.swift; sourceTree = "<group>"; };
+		111 /* WindowTracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowTracker.swift; sourceTree = "<group>"; };
+		112 /* ActivityManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityManager.swift; sourceTree = "<group>"; };
+		113 /* HotkeyService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotkeyService.swift; sourceTree = "<group>"; };
+		114 /* SpeechService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechService.swift; sourceTree = "<group>"; };
+		115 /* OllamaService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OllamaService.swift; sourceTree = "<group>"; };
+		116 /* CategoryEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryEngine.swift; sourceTree = "<group>"; };
+		117 /* MenuBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBarView.swift; sourceTree = "<group>"; };
+		118 /* CurrentActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentActivityView.swift; sourceTree = "<group>"; };
+		119 /* QuickCategoryPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickCategoryPicker.swift; sourceTree = "<group>"; };
+		120 /* VoiceInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceInputView.swift; sourceTree = "<group>"; };
+		121 /* MiniStatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniStatsView.swift; sourceTree = "<group>"; };
+		122 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		123 /* ProjectsSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectsSettingsView.swift; sourceTree = "<group>"; };
+		124 /* HotkeySettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotkeySettingsView.swift; sourceTree = "<group>"; };
+		125 /* OllamaSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OllamaSettingsView.swift; sourceTree = "<group>"; };
+		126 /* DailyReportView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyReportView.swift; sourceTree = "<group>"; };
+		127 /* TimelineChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineChart.swift; sourceTree = "<group>"; };
+		128 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		129 /* TimeTrack.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TimeTrack.entitlements; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		300 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				028 /* GRDB in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		400 = {
+			isa = PBXGroup;
+			children = (
+				401 /* TimeTrack */,
+				402 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		401 /* TimeTrack */ = {
+			isa = PBXGroup;
+			children = (
+				403 /* App */,
+				404 /* Models */,
+				405 /* Persistence */,
+				406 /* Services */,
+				407 /* Views */,
+				408 /* Resources */,
+			);
+			path = TimeTrack;
+			sourceTree = "<group>";
+		};
+		402 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				100 /* TimeTrack.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		403 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				101 /* TimeTrackApp.swift */,
+				102 /* AppState.swift */,
+				103 /* AppDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		404 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				104 /* Activity.swift */,
+				105 /* Project.swift */,
+				106 /* TimeEntry.swift */,
+				107 /* CategoryRule.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		405 /* Persistence */ = {
+			isa = PBXGroup;
+			children = (
+				108 /* Database.swift */,
+				109 /* ActivityStore.swift */,
+				110 /* ProjectStore.swift */,
+			);
+			path = Persistence;
+			sourceTree = "<group>";
+		};
+		406 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				111 /* WindowTracker.swift */,
+				112 /* ActivityManager.swift */,
+				113 /* HotkeyService.swift */,
+				114 /* SpeechService.swift */,
+				115 /* OllamaService.swift */,
+				116 /* CategoryEngine.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		407 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				409 /* MenuBar */,
+				410 /* Settings */,
+				411 /* Reports */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		408 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				128 /* Info.plist */,
+				129 /* TimeTrack.entitlements */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		409 /* MenuBar */ = {
+			isa = PBXGroup;
+			children = (
+				117 /* MenuBarView.swift */,
+				118 /* CurrentActivityView.swift */,
+				119 /* QuickCategoryPicker.swift */,
+				120 /* VoiceInputView.swift */,
+				121 /* MiniStatsView.swift */,
+			);
+			path = MenuBar;
+			sourceTree = "<group>";
+		};
+		410 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				122 /* SettingsView.swift */,
+				123 /* ProjectsSettingsView.swift */,
+				124 /* HotkeySettingsView.swift */,
+				125 /* OllamaSettingsView.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		411 /* Reports */ = {
+			isa = PBXGroup;
+			children = (
+				126 /* DailyReportView.swift */,
+				127 /* TimelineChart.swift */,
+			);
+			path = Reports;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		500 /* TimeTrack */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 600;
+			buildPhases = (
+				501 /* Sources */,
+				300 /* Frameworks */,
+				502 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TimeTrack;
+			packageProductDependencies = (
+				200 /* GRDB */,
+			);
+			productName = TimeTrack;
+			productReference = 100 /* TimeTrack.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		700 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					500 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = 701;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 400;
+			packageReferences = (
+				201 /* XCRemoteSwiftPackageReference "GRDB.swift" */,
+			);
+			productRefGroup = 402 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				500 /* TimeTrack */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		502 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		501 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				001 /* TimeTrackApp.swift in Sources */,
+				002 /* AppState.swift in Sources */,
+				003 /* AppDelegate.swift in Sources */,
+				004 /* Activity.swift in Sources */,
+				005 /* Project.swift in Sources */,
+				006 /* TimeEntry.swift in Sources */,
+				007 /* CategoryRule.swift in Sources */,
+				008 /* Database.swift in Sources */,
+				009 /* ActivityStore.swift in Sources */,
+				010 /* ProjectStore.swift in Sources */,
+				011 /* WindowTracker.swift in Sources */,
+				012 /* ActivityManager.swift in Sources */,
+				013 /* HotkeyService.swift in Sources */,
+				014 /* SpeechService.swift in Sources */,
+				015 /* OllamaService.swift in Sources */,
+				016 /* CategoryEngine.swift in Sources */,
+				017 /* MenuBarView.swift in Sources */,
+				018 /* CurrentActivityView.swift in Sources */,
+				019 /* QuickCategoryPicker.swift in Sources */,
+				020 /* VoiceInputView.swift in Sources */,
+				021 /* MiniStatsView.swift in Sources */,
+				022 /* SettingsView.swift in Sources */,
+				023 /* ProjectsSettingsView.swift in Sources */,
+				024 /* HotkeySettingsView.swift in Sources */,
+				025 /* OllamaSettingsView.swift in Sources */,
+				026 /* DailyReportView.swift in Sources */,
+				027 /* TimelineChart.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		800 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		801 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		802 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = TimeTrack/Resources/TimeTrack.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = TimeTrack/Resources/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2024. All rights reserved.";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.timetrack.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		803 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = TimeTrack/Resources/TimeTrack.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = TimeTrack/Resources/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2024. All rights reserved.";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.timetrack.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		600 /* Build configuration list for PBXNativeTarget "TimeTrack" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				802 /* Debug */,
+				803 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		701 /* Build configuration list for PBXProject "TimeTrack" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				800 /* Debug */,
+				801 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		201 /* XCRemoteSwiftPackageReference "GRDB.swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/groue/GRDB.swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.24.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		200 /* GRDB */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 201 /* XCRemoteSwiftPackageReference "GRDB.swift" */;
+			productName = GRDB;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 700 /* Project object */;
+}
